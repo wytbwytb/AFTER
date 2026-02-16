@@ -22,12 +22,13 @@ mkdir probes
 ```
 
 ## Workflow
+(1) Download the datasets (including the questions and image files) to the `data` folder. We have provided our factual textual descriptions for POPE and AMBER in the corresponding folders.
 
-(1) Get activations by running `bash scripts/get_activations.sh`. All activations are stored in the `features` folder.
+(2) Get activations by running `bash scripts/get_activations.sh`. All activations are stored in the `features` folder.
 
-(2) Get estimators by running `bash scripts/train_estimator.sh`. The trained estimators will be stored in the `probes` folder.
+(3) Get estimators by running `bash scripts/train_estimator.sh`. The trained estimators will be stored in the `probes` folder.
 
-(3) Conducting editing and evaluating the results by running `bash scripts/inference_editing_single.sh` to perform single inference-time editing on the corresponding LVLM and benchmark. To try out multiple hyperparameter settings, you can run `bash scripts/inference_editing_all.sh`. Read the code to learn about additional options.
+(4) Conducting editing and evaluating the results by running `bash scripts/inference_editing_single.sh` to perform single inference-time editing on the corresponding LVLM and benchmark. To try out multiple hyperparameter settings, you can run `bash scripts/inference_editing_all.sh`. Read the code to learn about additional options.
 
 
 ## How to Cite
@@ -43,5 +44,6 @@ mkdir probes
 
 
 ```
+
 
 
